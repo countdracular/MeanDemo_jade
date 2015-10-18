@@ -1,0 +1,13 @@
+doctype html
+html(ng-app='')
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    div
+      label Name:
+      input(type='text', ng-model='yourName', placeholder='请输入您的姓名')
+      hr
+      h1 Hello {{yourName}}!
+      script(src='javascripts/lib/angular.min.js')
